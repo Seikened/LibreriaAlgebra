@@ -3,14 +3,14 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "algebraIA_Fernando_Leon_Franco"
+name = "algebraIA"
 version = "0.0.1"
 authors = [
-    {name="Fernando Leon Franco", email="leon@leonesfrancos.com"}
+    {name = "Fernando Leon Franco", email = "leon@leonesfrancos.com"}
 ]
 description = "Una librería de álgebra lineal para la comunidad de IA."
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -19,9 +19,9 @@ classifiers = [
 dependencies = [
     "numpy==1.26.0",
     "matplotlib==3.8.1",
-    "scipy==1.11.3"  # Aunque lo mencionaste que debería ser instalado con pip, lo incluyo aquí
+    "scipy==1.11.3"
 ]
 
 [project.urls]
-Homepage = "https://github.com/Seikened/LibreriaAlgebra"
-Bug Tracker = "https://github.com/Seikened/LibreriaAlgebra/issues"
+"Homepage" = "https://github.com/Seikened/LibreriaAlgebra"
+"Bug Tracker" = "https://github.com/Seikened/LibreriaAlgebra/issues"
