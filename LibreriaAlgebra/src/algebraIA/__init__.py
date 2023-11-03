@@ -35,3 +35,4 @@ def matriz():
                 c[i][j] += posicionA * posisionB
 
     print(F"MATRÍZ RESULTANTE: \n{c}")
+    print("Pequeño cambio")
