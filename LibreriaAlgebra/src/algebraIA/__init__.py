@@ -1,38 +1,36 @@
-def matriz():
+def matriz(cA, rA, cB, rB):
+    
     import random
-
+    
     def numeroMatriz():
         numero = random.randint(-10,10)
         return numero
 
     while True:
         # Matríz a
-        columnasA =  int(input("Cuantas colunmas de la matríz a: "))
-        renglonesA =  int(input("Cuantos renglones de la matríz a: "))
+        columnasA =  cA
+        renglonesA =  rA
         # Matríz b
-        columnasB = int(input("Cuantas colunmas de la matríz b: "))
-        renglonesB = int(input("Cuantos renglones de la matríz b: "))
+        columnasB = cB
+        renglonesB = rB
         if columnasA == renglonesB:
             break
 
-    a = [[numeroMatriz() for _ in range(columnasA)] for _ in range(renglonesA)]
-    print(f"MATRÍZ A: \n{a}\n")
+    matrizA = [[numeroMatriz() for _ in range(columnasA)] for _ in range(renglonesA)]
 
-    b = [[numeroMatriz() for _ in range(columnasB)] for _ in range(renglonesB)]
-    print(f"MATRÍZ B: \n{b}\n")
-        
+    matrizB = [[numeroMatriz() for _ in range(columnasB)] for _ in range(renglonesB)]
 
     lista = [[] ]
 
     # Tamaño de la matríz c
-    c = [[0 for _ in range(len(b[0]))] for _ in range(len(a))]
+    matrizC = [[0 for _ in range(len(matrizB[0]))] for _ in range(len(matrizA))]
 
-    for i in range(len(a)):
-        for j in range(len(b[0])):
-            for k in range(len(a[0])):
-                posicionA = a[i][k]
-                posisionB = b[k][j]
-                c[i][j] += posicionA * posisionB
+    for i in range(len(matrizA)):
+        for j in range(len(matrizB[0])):
+            for k in range(len(matrizA[0])):
+                posicionA = matrizA[i][k]
+                posisionB = matrizB[k][j]
+                matrizC[i][j] += posicionA * posisionB
 
-    print(F"MATRÍZ RESULTANTE: \n{c}")
-    print("Pequeño cambio")
+    
+    return matrizA, matrizB, matrizC
