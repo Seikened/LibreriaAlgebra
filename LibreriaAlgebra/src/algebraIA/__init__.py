@@ -34,3 +34,9 @@ def matriz(cA, rA, cB, rB):
 
     
     return matrizA, matrizB, matrizC
+
+
+def vectorRestultante(*vectores):
+    vectorResultante = [ sum(valores) for valores in zip(*vectores)]
+    return vectorResultante
+

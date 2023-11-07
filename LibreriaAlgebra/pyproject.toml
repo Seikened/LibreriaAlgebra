@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "algebraIA"
-version = "0.0.2"
+version = "0.0.4"
 authors = [
     {name = "Fernando Leon Franco", email = "leon@leonesfrancos.com"}
 ]
@@ -25,3 +25,5 @@ dependencies = [
 [project.urls]
 "Homepage" = "https://github.com/Seikened/LibreriaAlgebra"
 "Bug Tracker" = "https://github.com/Seikened/LibreriaAlgebra/issues"
+
+
