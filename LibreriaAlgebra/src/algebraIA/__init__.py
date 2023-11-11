@@ -149,3 +149,27 @@ def producto_escalar():
   plt.axhline(y=0, color='grey')
 
   plt.show()
+  
+  
+  #maria códigos----------------------------------
+  import numpy as np
+
+# Definir el sistema de ecuaciones
+# 2x + y - z = 8
+# -3x - y + 2z = -11
+# -2x + y + 2z = -3
+
+coeficientes = np.array([[2, 1, -1],
+                         [-3, -1, 2],
+                         [-2, 1, 2]])
+
+constantes = np.array([8, -11, -3])
+
+# Resolver el sistema de ecuaciones lineales
+solucion = np.linalg.solve(coeficientes, constantes)
+
+# Mostrar la solución
+print("Solución del sistema de ecuaciones:")
+print("x =", solucion[0])
+print("y =", solucion[1])
+print("z =", solucion[2])
