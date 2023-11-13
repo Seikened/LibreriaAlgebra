@@ -1,6 +1,6 @@
 import numpy as np
 
-
+# fernando codigos-----------------------------------------------------------------------
 def matriz(cA, rA, cB, rB):
     
     import random
