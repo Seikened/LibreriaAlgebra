@@ -40,3 +40,15 @@ def vectorRestultante(*vectores):
     vectorResultante = [ sum(valores) for valores in zip(*vectores)]
     return vectorResultante
 
+
+
+print("""
+      C
+     /|
+    / |
+   Z  |
+  /   Y
+ /    |
+/__X__|
+A     B
+    """)

@@ -2,6 +2,7 @@ import __init__ as al
 
 matrizA,matrizB,matrizC = al.matriz(2,2,2,2)
 
+
 def impresoraMatriz(matriz):
     for renglon,lista in enumerate(matriz):
         renglonLista = []
